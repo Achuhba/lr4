@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaFlow - Свежие идеи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+
+            <a class="navbar-brand" href="index.html">IdeaFlow</a>
+            <div class="search-container d-none d-md-block mx-auto">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Поиск идей...">
+            </div>
+
+
+            <div class="ms-auto">
+                <a href="create.html" class="btn btn-accent d-flex align-items-center gap-1">
+                    <i class="bi bi-plus-lg"></i> Новая идея
+                </a>
+            </div>
+
+            <div class="search-container d-md-none w-100">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Поиск идей...">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="sidebar-title">Навигация</div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Активные темы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Мои подписки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Профиль</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 col-lg-10 main-content">
+                <h1 class="page-title">Свежие идеи</h1>
+
+                <div class="idea-card">
+                    <div class="idea-title">Платформа для шеринга инструментов между соседями</div>
+                    <div class="idea-desc">
+                        Идея в том, чтобы создать локальные комьюнити, где жильцы одного ЖК могут арендовать или брать
+                        бесплатно дрели, стремянки и другие редкие в обиходе инструменты. Это сокращает потребление и
+                        сближает соседей.
+                    </div>
+                    <div class="idea-author">Константин Белов</div>
+                </div>
+
+                <div class="idea-card">
+                    <div class="idea-title">Интерактивная карта велопарковок с датчиками занятости</div>
+                    <div class="idea-desc">
+                        Многие сталкиваются с тем, что велопарковки у метро переполнены или небезопасны. Предлагаю
+                        оснастить стандартные стойки простыми датчиками веса/замка и выводить статус в реальном времени.
+                    </div>
+                    <div class="idea-author">Анна Воронцова</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

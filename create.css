@@ -1,0 +1,242 @@
+:root {
+    --bg-dark: #0b111a;
+    --bg-card: #151d2a;
+    --text-main: #ffffff;
+    --text-muted: #8b98a5;
+    --accent-color: #4ffbdf;
+    --border-color: #212c3d;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main) !important;
+    text-decoration: none;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
+.search-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.search-container input {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    border-radius: 8px;
+    padding: 0.6rem 1rem 0.6rem 2.5rem;
+    width: 100%;
+}
+
+.search-container input:focus {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(79, 251, 223, 0.1);
+    outline: none;
+}
+
+.search-container input::placeholder {
+    color: var(--text-muted);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #000000;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-accent:hover {
+    background-color: #3ce0c5;
+    color: #000000;
+}
+
+
+.sidebar {
+    min-height: calc(100vh - 73px);
+    border-right: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.sidebar-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #4a5868;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.sidebar .nav-link {
+    color: var(--text-muted);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: var(--text-main);
+}
+
+
+.main-content {
+    padding: 2.5rem 4rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.form-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.form-label {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-label .required {
+    color: #ff6b6b;
+    margin-left: 2px;
+}
+
+.form-control,
+.form-select {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    border-radius: 8px;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(79, 251, 223, 0.1);
+}
+
+.form-control::placeholder {
+    color: #556373;
+}
+
+textarea.form-control {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.form-select option {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+}
+
+.form-hint {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+.char-counter {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 0.4rem;
+}
+
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-ghost:hover {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    border-color: #3b4b61;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .search-container {
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1rem;
+    }
+
+    .main-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-card {
+        padding: 1.25rem;
+    }
+}
